@@ -1,0 +1,9 @@
+-------------------------------------------
+--- YENI SIPARIS ---
+Musteri: Ser | Tel: 542
+Adres: Kg
+Yemek: Tavuklu Pilav x 1.0 pors. = 100.0 TL
+Icecek: Ayran x 1.0 adet = 30.0 TL
+Indirim (PILOVE10): -13.0 TL
+TOPLAM TUTAR: 117.0 TL
+-------------------------------------------

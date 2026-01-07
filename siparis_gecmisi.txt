@@ -1,9 +1,2 @@
--------------------------------------------
---- YENI SIPARIS ---
-Musteri: Ser | Tel: 542
-Adres: Kg
-Yemek: Tavuklu Pilav x 1.0 pors. = 100.0 TL
-Icecek: Ayran x 1.0 adet = 30.0 TL
-Indirim (PILOVE10): -13.0 TL
-TOPLAM TUTAR: 117.0 TL
--------------------------------------------
+2;emin malı;0522;mamutpasa;Nohutlu Pilav;2.0;200.0;Su;1.0;15.0;21.5;193.5
+3;BeratTTTT;989;topkapı;Ciger & Pilav;4.0;600.0;Soda;5.0;100.0;70.0;630.0

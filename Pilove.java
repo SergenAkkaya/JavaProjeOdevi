@@ -82,7 +82,7 @@ public class Pilove {
         try (PrintWriter yazici = new PrintWriter(new FileWriter(DOSYA_YOLU, true))) {
             yazici.println(sNo + ";" + ad + ";" + tel + ";" + adres + ";" + urun + ";" + uPors + ";" + uTutar + ";" + icecek + ";" + iPors + ";" + iTutar + ";" + indirim + ";" + toplam);
             kucukGecikme(700);
-            System.out.println("\n>>> Siparis No " + sNo + " basariyla kaydedildi.");
+            System.out.println("\n>>> Siparis No " + sNo + " sisteme kaydedildi.");
         } catch (IOException e) {
             System.out.println("Hata: Dosya yazilamadi!");
         }
@@ -208,7 +208,7 @@ public class Pilove {
 
         while (true) {
             System.out.println("\n===============================");
-            System.out.println("   PILOVE SIPARIS SISTEMI");
+            System.out.println("   PILOVE OTOMASYON SISTEMI");
             System.out.println("===============================");
             System.out.println("1 )- Kullanici Girisi");
             System.out.println("2 )- Admin Girisi");
@@ -251,6 +251,19 @@ public class Pilove {
                         System.out.println("Tebrikler! %10 indirim uygulandi.");
                     }
                     double sonFiyat = araToplam - indirimMiktari;
+
+                    System.out.println("\n--- SIPARISINIZ ALINDI ---");
+                    System.out.println("Musteri: " + ad);
+                    System.out.println("Yemek  : " + yemekler[ySec-1] + " x " + yMiktar + " Pors. = " + yemekTutar + " TL");
+                    if (iSec != 5) {
+                        System.out.println("Icecek : " + icecekler[iSec-1] + " x " + iMiktar + " Adet = " + icecekTutar + " TL");
+                    }
+                    if (indirimMiktari > 0) {
+                        System.out.println("Indirim: -" + indirimMiktari + " TL");
+                    }
+                    System.out.println("--------------------------");
+                    System.out.println("TOPLAM ODENECEK: " + sonFiyat + " TL");
+                    System.out.println("--------------------------");
 
                     dosyayaKaydet(siparisSayaci, ad, tel, adres, yemekler[ySec - 1], yMiktar, yemekTutar, icecekler[iSec - 1], iMiktar, icecekTutar, indirimMiktari, sonFiyat);
                     siparisSayaci++;
